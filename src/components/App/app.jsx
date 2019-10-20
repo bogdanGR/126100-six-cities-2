@@ -98,6 +98,6 @@ const App = ({titles}) => {
   </React.Fragment>;
 };
 App.propTypes = {
-  titles: PropTypes.array
+  titles: PropTypes.array.isRequired
 };
 export default App;
