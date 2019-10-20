@@ -1,7 +1,7 @@
 import React from "react";
-import PlaceCard from './../place-card/place-card.jsx';
+import CardPlace from "../card-place/card-place.jsx";
 import PropTypes from 'prop-types';
-const App = ({titles}) => {
+const App = ({cards}) => {
   return <React.Fragment>
     <div style={{display: `none`}}>
       <svg xmlns="http://www.w3.org/2000/svg">
@@ -82,9 +82,9 @@ const App = ({titles}) => {
                 {/* </select>*/}
               </form>
               <div className="cities__places-list places__list tabs__content">
-                {titles.map((currentTitle, index) => <PlaceCard
-                  key={index}
-                  title={currentTitle}
+                {cards.map((card) => <CardPlace
+                  key={card.title}
+                  {...card}
                 />)}
               </div>
             </section>
@@ -98,6 +98,6 @@ const App = ({titles}) => {
   </React.Fragment>;
 };
 App.propTypes = {
-  titles: PropTypes.array.isRequired
+  cards: PropTypes.array.isRequired
 };
 export default App;
