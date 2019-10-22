@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import App from "./app.jsx";
-import CARDS_MOCK from "../../mock-data";
+import CARDS_MOCK from "../../mocks/offers";
 
 it(`main page renders correctly`, () => {
   const card = renderer

@@ -1,25 +1,25 @@
 import React from 'react';
-import CardPlace from './card-place.jsx';
+import PlaceCard from './place-card.jsx';
 import renderer from 'react-test-renderer';
 
 describe(`renders correctly`, ()=> {
   it(`in the default state`, () => {
     const card = renderer
-      .create(<CardPlace/>)
+      .create(<PlaceCard/>)
       .toJSON();
     expect(card).toMatchSnapshot();
   });
 
   it(`if the card is favorite`, ()=> {
     const cardIsFavorite = renderer
-      .create(<CardPlace isFavorite={true} />)
+      .create(<PlaceCard isFavorite={true} />)
       .toJSON();
     expect(cardIsFavorite).toMatchSnapshot();
   });
 
   it(`if the card is premium`, ()=> {
     const cardIsPremium = renderer
-      .create(<CardPlace isPremium={true} />)
+      .create(<PlaceCard isPremium={true} />)
       .toJSON();
     expect(cardIsPremium).toMatchSnapshot();
   });

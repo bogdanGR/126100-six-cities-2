@@ -1,5 +1,5 @@
 import React from "react";
-import CardPlace from "../card-place/card-place.jsx";
+import PlaceCard from "../card-place/place-card.jsx";
 import PropTypes from 'prop-types';
 const App = ({cards}) => {
   return <React.Fragment>
@@ -82,7 +82,7 @@ const App = ({cards}) => {
                 {/* </select>*/}
               </form>
               <div className="cities__places-list places__list tabs__content">
-                {cards.map((card) => <CardPlace
+                {cards.map((card) => <PlaceCard
                   key={card.title}
                   {...card}
                 />)}
