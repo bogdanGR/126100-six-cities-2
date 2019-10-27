@@ -218,19 +218,16 @@ Array [
                 <div
                   className="place-card__mark"
                 >
-                  <div
-                    className="place-card__mark"
-                  >
-                    <span>
-                      Premium
-                    </span>
-                  </div>
+                  <span>
+                    Premium
+                  </span>
                 </div>
                 <div
                   className="cities__image-wrapper place-card__image-wrapper"
                 >
                   <a
                     href="#"
+                    onClick={[Function]}
                   >
                     <img
                       alt="Place image"
@@ -323,13 +320,11 @@ Array [
                 className="cities__place-card place-card"
               >
                 <div
-                  className="place-card__mark"
-                />
-                <div
                   className="cities__image-wrapper place-card__image-wrapper"
                 >
                   <a
                     href="#"
+                    onClick={[Function]}
                   >
                     <img
                       alt="Place image"
@@ -422,13 +417,11 @@ Array [
                 className="cities__place-card place-card"
               >
                 <div
-                  className="place-card__mark"
-                />
-                <div
                   className="cities__image-wrapper place-card__image-wrapper"
                 >
                   <a
                     href="#"
+                    onClick={[Function]}
                   >
                     <img
                       alt="Place image"
@@ -521,13 +514,11 @@ Array [
                 className="cities__place-card place-card"
               >
                 <div
-                  className="place-card__mark"
-                />
-                <div
                   className="cities__image-wrapper place-card__image-wrapper"
                 >
                   <a
                     href="#"
+                    onClick={[Function]}
                   >
                     <img
                       alt="Place image"

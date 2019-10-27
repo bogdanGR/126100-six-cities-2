@@ -5,19 +5,17 @@ exports[`renders correctly if the card is favorite 1`] = `
   className="cities__place-card place-card"
 >
   <div
-    className="place-card__mark"
-  />
-  <div
     className="cities__image-wrapper place-card__image-wrapper"
   >
     <a
       href="#"
+      onClick={[Function]}
     >
       <img
         alt="Place image"
         className="place-card__image"
         height="200"
-        src="img/apartment-01.jpg"
+        src=""
         width="260"
       />
     </a>
@@ -90,13 +88,13 @@ exports[`renders correctly if the card is favorite 1`] = `
       <a
         href="#"
       >
-        default name
+        
       </a>
     </h2>
     <p
       className="place-card__type"
     >
-      Apartment
+      
     </p>
   </div>
 </article>
@@ -109,25 +107,22 @@ exports[`renders correctly if the card is premium 1`] = `
   <div
     className="place-card__mark"
   >
-    <div
-      className="place-card__mark"
-    >
-      <span>
-        Premium
-      </span>
-    </div>
+    <span>
+      Premium
+    </span>
   </div>
   <div
     className="cities__image-wrapper place-card__image-wrapper"
   >
     <a
       href="#"
+      onClick={[Function]}
     >
       <img
         alt="Place image"
         className="place-card__image"
         height="200"
-        src="img/apartment-01.jpg"
+        src=""
         width="260"
       />
     </a>
@@ -200,13 +195,13 @@ exports[`renders correctly if the card is premium 1`] = `
       <a
         href="#"
       >
-        default name
+        
       </a>
     </h2>
     <p
       className="place-card__type"
     >
-      Apartment
+      
     </p>
   </div>
 </article>
@@ -217,19 +212,17 @@ exports[`renders correctly in the default state 1`] = `
   className="cities__place-card place-card"
 >
   <div
-    className="place-card__mark"
-  />
-  <div
     className="cities__image-wrapper place-card__image-wrapper"
   >
     <a
       href="#"
+      onClick={[Function]}
     >
       <img
         alt="Place image"
         className="place-card__image"
         height="200"
-        src="img/apartment-01.jpg"
+        src=""
         width="260"
       />
     </a>
@@ -302,13 +295,13 @@ exports[`renders correctly in the default state 1`] = `
       <a
         href="#"
       >
-        default name
+        
       </a>
     </h2>
     <p
       className="place-card__type"
     >
-      Apartment
+      
     </p>
   </div>
 </article>

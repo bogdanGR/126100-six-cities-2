@@ -1,13 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./components/App/app.jsx";
-import CARDS_MOCK from "./mocks/offers.js";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import InitComponent from "./initComponent";
+
 const initApp = () => {
   ReactDOM.render(
-      <App
-        cards={CARDS_MOCK}
-      />,
+      <InitComponent/>,
       document.getElementById(`root`)
   );
 };
+
 initApp();

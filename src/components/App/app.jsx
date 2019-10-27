@@ -1,7 +1,8 @@
 import React from "react";
-import PlaceCard from "../card-place/place-card.jsx";
+import OffersList from "../offers-list/offers-list.jsx";
 import PropTypes from 'prop-types';
-const App = ({cards}) => {
+
+const App = ({offers}) => {
   return <React.Fragment>
     <div style={{display: `none`}}>
       <svg xmlns="http://www.w3.org/2000/svg">
@@ -81,12 +82,9 @@ const App = ({cards}) => {
                 {/*  <option class="places__option" value="top-rated">Top rated first</option>*/}
                 {/* </select>*/}
               </form>
-              <div className="cities__places-list places__list tabs__content">
-                {cards.map((card) => <PlaceCard
-                  key={card.title}
-                  {...card}
-                />)}
-              </div>
+              <OffersList
+                offers={offers}
+              />
             </section>
             <div className="cities__right-section">
               <section className="cities__map map"></section>
@@ -98,6 +96,6 @@ const App = ({cards}) => {
   </React.Fragment>;
 };
 App.propTypes = {
-  cards: PropTypes.array.isRequired
+  offers: PropTypes.array.isRequired,
 };
 export default App;
