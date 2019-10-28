@@ -4,7 +4,8 @@ import offers from "./mocks/offers.js";
 
 class InitComponent extends Component {
   render() {
-    return <App offers={offers} />;
+    const clickHandler = () => {};
+    return <App offers={offers} clickHandler={clickHandler} />;
   }
 }
 

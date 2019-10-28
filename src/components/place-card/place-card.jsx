@@ -13,8 +13,8 @@ class PlaceCard extends PureComponent {
   }
 
   render() {
-    const {isPremium, imgURL, price, isFavorite, rating, onTitleClickHandler, title, type} = this.props;
-    return <article className="cities__place-card place-card">
+    const {isPremium, imgURL, price, isFavorite, rating, onTitleClickHandler, title, type, onMouseoverHandler} = this.props;
+    return <article className="cities__place-card place-card" id={this.id} onMouseOver={() => onMouseoverHandler(this.id)}>
       {isPremium ? (<div className="place-card__mark"><span>Premium</span></div>) : null}
       <div className="cities__image-wrapper place-card__image-wrapper">
         <a href="#" onClick={this.handleImageClick}>
@@ -60,8 +60,9 @@ PlaceCard.propTypes = {
   isFavorite: PropTypes.bool.isRequired,
   price: PropTypes.number.isRequired,
   rating: PropTypes.number.isRequired,
-  onTitleClickHandler: PropTypes.func,
-  onSelected: PropTypes.func
+  onTitleClickHandler: PropTypes.func.isRequired,
+  onSelected: PropTypes.func,
+  onMouseoverHandler: PropTypes.func.isRequired
 };
 
 export default PlaceCard;

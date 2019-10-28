@@ -214,6 +214,7 @@ Array [
             >
               <article
                 className="cities__place-card place-card"
+                onMouseOver={[Function]}
               >
                 <div
                   className="place-card__mark"
@@ -318,6 +319,7 @@ Array [
               </article>
               <article
                 className="cities__place-card place-card"
+                onMouseOver={[Function]}
               >
                 <div
                   className="cities__image-wrapper place-card__image-wrapper"
@@ -415,6 +417,7 @@ Array [
               </article>
               <article
                 className="cities__place-card place-card"
+                onMouseOver={[Function]}
               >
                 <div
                   className="cities__image-wrapper place-card__image-wrapper"
@@ -512,6 +515,7 @@ Array [
               </article>
               <article
                 className="cities__place-card place-card"
+                onMouseOver={[Function]}
               >
                 <div
                   className="cities__image-wrapper place-card__image-wrapper"
