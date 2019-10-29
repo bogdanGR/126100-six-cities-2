@@ -6,7 +6,6 @@ import Adapter from 'enzyme-adapter-react-16';
 configure({adapter: new Adapter()});
 
 const clickHandler = jest.fn();
-const mouseoverHandler = jest.fn();
 it(`simulate click to the title of card`, () => {
   const card = shallow(<PlaceCard
     id={`567657`}
@@ -23,9 +22,9 @@ it(`simulate click to the title of card`, () => {
   expect(clickHandler).toHaveBeenCalled();
 });
 
-it(`simulate click to the title of card`, () => {
+it(`simulate hover`, () => {
   const card = shallow(<PlaceCard
-    id={`0`}
+    id={`567657`}
     title={``}
     imgURL={``}
     isPremium={false}
@@ -33,9 +32,8 @@ it(`simulate click to the title of card`, () => {
     price={0}
     type={``}
     rating={0}
-    onMouseoverHandler={mouseoverHandler}
+    onHover={clickHandler}
   />);
-  const cardNode = card.find(`article`);
-  cardNode.simulate(`mouseover`);
-  expect(mouseoverHandler).toHaveBeenCalledWith(`0`);
+  card.find(`.place-card`).simulate(`mouseover`);
+  expect(clickHandler).toHaveBeenCalled();
 });

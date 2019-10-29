@@ -3,24 +3,20 @@ import PlaceCard from "./place-card";
 import renderer from 'react-test-renderer';
 
 describe(`renders correctly`, () => {
-  it(`Card correctly renders after relaunch`, () => {
-    const tree = renderer
+  it(`in the default state`, () => {
+    const card = renderer
       .create(<PlaceCard
-        offer={{
-          id: 0,
-          title: ``,
-          picture: ``,
-          type: ``,
-          price: 0,
-          rate: 0,
-          isBookmarked: false,
-          isPremium: false,
-        }}
-        onMouseoverHandler={()=>{}}
+        id={`dsdsd`}
+        title={``}
+        imgURL={``}
+        isPremium={false}
+        isFavorite={false}
+        price={0}
+        type={``}
+        rating={0}
       />)
       .toJSON();
-
-    expect(tree).toMatchSnapshot();
+    expect(card).toMatchSnapshot();
   });
 
   it(`if the card is favorite`, () => {

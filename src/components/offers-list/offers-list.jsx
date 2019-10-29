@@ -10,19 +10,15 @@ class OffersList extends PureComponent {
       selected: null
     };
     this.onSelected = this.onSelected.bind(this);
-    this._offerMouseEnterHandler = this._offerMouseEnterHandler.bind(this);
+    this.handleMouseOver = this.handleMouseOver.bind(this);
   }
 
-  _offerMouseEnterHandler(id) {
-    this.setState((prevState) => {
-      return {
-        prevState,
-        selected: id,
-      };
-    });
-  }
   onSelected(id) {
     this.setState({selected: id});
+  }
+
+  handleMouseOver(offer) {
+    this.setState({selected: offer});
   }
 
   render() {
@@ -32,9 +28,9 @@ class OffersList extends PureComponent {
         return <PlaceCard
           key={offer.id}
           {...offer}
-          onMouseoverHandler={this._offerMouseEnterHandler}
           onSelected={this.onSelected}
           selected={this.state.selected === offer.id}
+          onHover={this.handleMouseOver}
         />;
       })}
     </div>;
