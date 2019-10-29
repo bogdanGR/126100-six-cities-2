@@ -214,23 +214,21 @@ Array [
             >
               <article
                 className="cities__place-card place-card"
+                onMouseOver={[Function]}
               >
                 <div
                   className="place-card__mark"
                 >
-                  <div
-                    className="place-card__mark"
-                  >
-                    <span>
-                      Premium
-                    </span>
-                  </div>
+                  <span>
+                    Premium
+                  </span>
                 </div>
                 <div
                   className="cities__image-wrapper place-card__image-wrapper"
                 >
                   <a
                     href="#"
+                    onClick={[Function]}
                   >
                     <img
                       alt="Place image"
@@ -321,15 +319,14 @@ Array [
               </article>
               <article
                 className="cities__place-card place-card"
+                onMouseOver={[Function]}
               >
-                <div
-                  className="place-card__mark"
-                />
                 <div
                   className="cities__image-wrapper place-card__image-wrapper"
                 >
                   <a
                     href="#"
+                    onClick={[Function]}
                   >
                     <img
                       alt="Place image"
@@ -420,15 +417,14 @@ Array [
               </article>
               <article
                 className="cities__place-card place-card"
+                onMouseOver={[Function]}
               >
-                <div
-                  className="place-card__mark"
-                />
                 <div
                   className="cities__image-wrapper place-card__image-wrapper"
                 >
                   <a
                     href="#"
+                    onClick={[Function]}
                   >
                     <img
                       alt="Place image"
@@ -519,15 +515,14 @@ Array [
               </article>
               <article
                 className="cities__place-card place-card"
+                onMouseOver={[Function]}
               >
-                <div
-                  className="place-card__mark"
-                />
                 <div
                   className="cities__image-wrapper place-card__image-wrapper"
                 >
                   <a
                     href="#"
+                    onClick={[Function]}
                   >
                     <img
                       alt="Place image"
